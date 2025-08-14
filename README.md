@@ -18,7 +18,7 @@ The development environment of this project is encapsulated in a Docker containe
 1. Install Docker. Follow the instructions on https://docs.docker.com/install/
 2. Clone the GIT repository   
    `git clone https://github.com/nz-stefan/llm-table-extraction-play`
-3. Open file `.Renviron-template` and follow instructions to set up your `OPENAI_API_KEY`.
+3. Open file `.Renviron-template` and follow instructions to set up your `ANTHROPIC_API_KEY`.
 4. Setup development Docker container  
    `bin/setup-environment.sh`  
    You should see lots of container build messages
