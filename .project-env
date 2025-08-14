@@ -1,0 +1,4 @@
+PROJECT_NAME=llm-table-extraction
+DOCKER_IMAGE=project/llm-table-extraction
+DOCKER_PORT=8793   # <---- change port here to avoid clashes with other Rstudio containers
+

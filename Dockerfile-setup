@@ -1,0 +1,12 @@
+FROM rocker/rstudio:4.5.1
+
+# install additional system dependencies
+RUN apt-get update && apt-get install -y libxml2-dev zlib1g-dev libgit2-dev libcurl4-openssl-dev
+
+# set CRAN repo to the RStudio mirror
+RUN echo "options(repos = c(CRAN = 'https://packagemanager.posit.co/cran/__linux__/noble/latest'), download.file.method = 'libcurl')" >> /usr/local/lib/R/etc/Rprofile.site
+
+# install renv
+RUN Rscript -e "install.packages('renv')"
+
+CMD ["/init"]

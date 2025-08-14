@@ -1,0 +1,6 @@
+.Renviron
+.Rhistory
+.cache/
+.config/
+.local/
+
